@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Motor Cich</title>
+
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/lightbox.css">
+	<link href="css/Glyphter.css" rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript">
+		/*$(document).ready(function(){
+							var items = $('.list-of-goods li');
+							
+							items.on('click', function(e) {
+								$(this).toggleClass('is-opened');
+							});
+						});*/
+		/*$(document).ready(function(){
+			var items = $('.list-of-goods li');
+			
+			items.on('click', function() {
+				$('.list-of-goods li').removeClass('is-opened');
+				$(this).addClass('is-opened');
+			});
+		});*/
+		$(document).ready(function () {
+			var items = $('.list-of-goods li');
+
+			items.on('click', function () {
+				//debugger;
+				items.find('.sub-list').slideUp();
+				items.removeClass('is-opened');
+
+				$(this).find('.sub-list').slideDown();
+				$(this).addClass('is-opened');
+			});
+
+			$('.menu-button').on('click', function () {
+				$('.main-menu').toggleClass('is-opened');
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<section class="overalWrapper">
+		<div class="container">
+			<div class="row">
+				<div class="top-supporting">
+					<ul class="top-supporting-subMenu">
+						<li>
+							<a href="#"><img src="logos&links/Zakupka.com.png" alt=""></a>
+						</li>
+						<li><a class="vip" href="#">VIP  <img src="logos&links/stars.png" alt=""></a></li>
+						<li>
+							<a class="add" href="#"><img src="logos&links/add-galochka.png" alt=""> Добавить компанию на Zakupka.com</a>
+						</li>
+						<li>
+							<a class="phone" href="#"><img src="logos&links/phone-feedback.png" alt=""> Заказать обратный звонок</a>
+						</li>
+						<li>
+							<a class="basket-word" href="#"><img src="logos&links/basket.png" alt=""> Корзина</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="banner">
+					<div class="logo-motor-cich">
+						<a class="mainLogo" href="#"><img src="logos&links/motor-cich.png" alt=""></a>Мотор Сич
+					</div>
+					<div class="telephone">+7(912)220-71-85</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="menu-line">
+					<button type="button" class="only-mobile menu-button">Menu <span class="caret"></span></button>
+					<ul class="main-menu">
+						<li class="active"><a href="#">Главная</a></li>
+						<li><a href="#">Товары и услуги</a></li>
+						<li><a href="#">Оплата и доставка</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<form action="#">
+						<input type="search" placeholder="Поиск товаров" name="go" />
+					</form>
+				</div>
+			</div>
+			
+			
+			<div class="row">
+				<ul class="breadcrumbs">
+					<li>
+						<a href="#"><img src="logos&links/house.png" alt=""></a>
+					</li>
+					<li>
+						<a href="#">Товары и услуги</a>
+					</li>
+					<li>
+						<a href="#">Ручная дуговая</a>
+					</li>
+					<li class="active">
+						<a href="#">Инверторы</a>
+					</li>
+				</ul>
+				<div class="changeLng">
+<!--Здесь переключатель языка-->
+				</div>
+			</div>
+			
+			
+			<div class="row">
+				<div class="col-lg-3 left-side">
+					<div class="container goods-further-contacts hide-on-mobile">
+						<div class="hanger"><img src="logos&links/hanger.png" alt=""></div>
+						<div class="hanger"><h3><b>Товары и услуги (203)</b></h1></div>
+						<ul class="list-of-goods">
+							<li>
+								<span>Фонари (169)</span>
+								<ul class="sub-list">
+									<li><a href="#">Бинокулярная лупа</a></li>
+									<li><a href="#">Лампа-лупа ZD-129A</a></li>
+									<li><a href="#">Круглогубцы 4,5IN загнутые</a></li>
+								</ul>
+							</li>
+							<li>
+							<span>Детекторы валюты (3)</span>
+								<ul class="sub-list">
+									<li><a href="#">Бинокулярная лупа</a></li>
+									<li><a href="#">Лампа-лупа ZD-129A</a></li>
+									<li><a href="#">Круглогубцы 4,5IN загнутые</a></li>
+								</ul>
+							</li>
+							<li>
+								<span>Зарядные устройства (6)</span>
+								<ul class="sub-list">
+									<li><a href="#">Бинокулярная лупа</a></li>
+									<li><a href="#">Лампа-лупа ZD-129A</a></li>
+									<li><a href="#">Круглогубцы 4,5IN загнутые</a></li>
+								</ul>
+							</li>
+							<li>
+								<span>Лазерные указки (3)</span>
+								<ul class="sub-list">
+									<li><a href="#">Бинокулярная лупа</a></li>
+									<li><a href="#">Лампа-лупа ZD-129A</a></li>
+									<li><a href="#">Круглогубцы 4,5IN загнутые</a></li>
+								</ul>
+							</li>
+							<li>
+								<span>Крепления для фонарей (2)</span>
+								<ul class="sub-list">
+									<li><a href="#">Бинокулярная лупа</a></li>
+									<li><a href="#">Лампа-лупа ZD-129A</a></li>
+									<li><a href="#">Круглогубцы 4,5IN загнутые</a></li>
+								</ul>
+							</li>
+							<li>
+								<span>Li-ionаккумуляторы к фонарям (12)</span>
+								<ul class="sub-list">
+									<li><a href="#">Бинокулярная лупа</a></li>
+									<li><a href="#">Лампа-лупа ZD-129A</a></li>
+									<li><a href="#">Круглогубцы 4,5IN загнутые</a></li>
+								</ul>
+							</li>
+							<li>
+								<span>Скотч (3)</span>
+								<ul class="sub-list">
+								<li><a href="#">Бинокулярная лупа</a></li>
+									<li><a href="#">Лампа-лупа ZD-129A</a></li>
+									<li><a href="#">Круглогубцы 4,5IN загнутые</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="further-list">
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Оставить отзыв</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Статьи</a></li>
+						</ul>
+						<div class="hanger contact"><img src="logos&links/contact.png" alt=""></div>
+						<div class="hanger"><h3>Контакты</h1></div>
+						<ul class="contacts">
+							<li class="name">Интернет-магазин "Киндервельт"</li>
+							<li class="telephones"><p class="blackFont"><b>Телефоны:</b></p>
+								<p>+380(93) 143-55-48, Лайф</p><p>+380(66) 044-63-48, МТС</p><p>+380(98) 917-03-57, Киевстар</p>
+							</li>
+							<li class="address"><p class="blackFont"><b>Адрес:</b></p>
+								<p>58000, Украина, Черновицкая обл., Черновцы, л.Головна 17, маг. МОТОТЕХНИКА, Черновцы, 58022, Украина на карте</p>
+							</li>
+						</ul>
+						<div class="envelope-writeUs">
+							<div class="hanger envelope"><img src="logos&links/envelope.png" alt=""></div>
+							<div class="hanger writeUs"><p>Написать нам</p></div>
+						</div>
+						<div class="socials">
+							<div class="hanger icons">
+								<ul class="">
+									<li><a href="#"><img src="logos&links/vk.png" alt=""></a></li>
+									<li><a href="#"><img src="logos&links/fb.png" alt=""></a></li>
+									<li><a href="#"><img class="google-img" src="logos&links/google+.png" alt=""></a></li>
+									<li><a href="#"><img class="twitter-img" src="logos&links/tw.png" alt=""></a></li>
+								</ul>
+							</div>
+							<div class="hanger soc-names">
+								<ul class="">
+									<li><a href="#">Вконтакте</a></li>
+									<li><a href="#">Facebook</a></li>
+									<li><a href="#">Google+</a></li>
+									<li><a href="#">Twitter</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				<div class="col-lg-9 content">
+					<div class="container">
+						<div class="row">
+							<h1>О нас</h1>
+							<p class="about-us">В интернет-магазине Киндервельт представлен широкий ассортимент товаров. Основные наши направления это  настольные игры, разнообразные игровые фигурки, машинки, пистолеты, мягкие игрушки, в общем, всё, что может понадобиться ребенку, также мы  занимаемся чехлами для смартфонов и планшетов, кухонной продукцией фирм Bergner и Kaiserhoff, также в нашем магазине представлен качественный
+турецкий текстиль Arya. Все товары мы отправляем товары как наложенным платежом, так и по предоплате.</p>
+						</div>
+					</div>
+					
+					
+					<div class="container watch-goods">
+						<h1>Товары и услуги</h1>
+						<!--<div class="row">-->
+							<div class="col-lg-6 watch-goods-inside">
+								<div class="col-lg-3 watch-goods-inside-1 folders">
+									<span><img src="logos&links/folder.png" alt=""></span>
+								</div>
+								<div class="col-lg-9 watch-goods-inside-1">
+									<h3><a href="#">Крупная бытовая техника (303)</a></h3>
+									<p>Электрическая печь, Духовки, Посудомоечные машины, Стиральные машины, Варочные поверхности, Холодильники</p>
+								</div>
+							</div>
+							<div class="col-lg-6 watch-goods-inside">
+								<div class="col-lg-3 watch-goods-inside-1 folders"><span><img src="logos&links/folder.png" alt=""></span></div>
+								<div class="col-lg-9 watch-goods-inside-1">
+									<h3><a href="#">Крупная бытовая техника (303)</a></h3>
+									<p>Газовые котлы, Маслянный обогреватель, кондиционеры</p>
+								</div>
+							</div>
+						<!--</div>-->
+						
+						
+						<!--<div class="row">-->
+							<div class="col-lg-6 watch-goods-inside">
+								<div class="col-lg-3 watch-goods-inside-1 folders"><span><img src="logos&links/folder.png" alt=""></span></div>
+								<div class="col-lg-9 watch-goods-inside-1">
+									<h3><a href="#">Крупная бытовая техника (303)</a></h3>
+									<p>Газовые котлы, Маслянный обогреватель, кондиционеры</p>
+								</div>
+							</div>
+							<div class="col-lg-6 watch-goods-inside">
+								<div class="col-lg-3 watch-goods-inside-1 folders"><span><img src="logos&links/folder.png" alt=""></span></div>
+								<div class="col-lg-9 watch-goods-inside-1">
+									<h3><a href="#">Крупная бытовая техника (303)</a></h3>
+									<p>Газовые котлы, Маслянный обогреватель, кондиционеры</p>
+								</div>
+							</div>
+						<!--</div>-->
+						<h1>Товары и услуги</h1>
+					</div>
+					
+					
+					<div class="container other-side">
+						<div class="row">
+							<div class="block">
+								<a href="#"><img src="img/picture-for-subfolders.png" alt=""></a>
+								<p>Биокамины <span class="quantity">(1)</span></p>
+							</div>
+							<div class="block">
+								<a href="#"><img src="img/picture-for-subfolders.png" alt=""></a>
+								<p>Оригинальные подарки <span class="quantity">(29)</span></p>
+							</div>
+							<div class="block">
+								<a href="#"><img src="img/picture-for-subfolders.png" alt=""></a>
+								<p>Для дома и сада <span class="quantity">(133)</span></p>
+							</div>
+						</div>
+					</div>
+					
+					
+					
+					<div class="container more-goods">
+						
+						<div class="row">
+							<!--<div class="div-grey-square">-->
+								<div class="grey-square"></div>
+							<!--</div>-->
+							<div class="advert">
+								<h4>Биокамины</h4>
+								<p>Ваш сайт одновременно находится в 3-х дата-центрах, благодаря чему достигается высокая доступность сайта</p>
+							</div>
+						</div>
+						
+						<div class="row">
+							<ul class="gallery-menu">
+								<li>Сортировка</li>
+								<li class="link-to-sort-menu"><span><img src="logos&links/sort.png" alt=""></span> <a href="#">  По рейтингу</a> <span class="mark"><img src="logos&links/marker-opened.png" alt=""></span>
+									<ul class="sort-menu">
+										<li><a href="#">Сначала подешевле</a></li>
+										<li><a href="#">Сначала подороже</a></li>
+										<li><a href="#">По новизне</a></li>
+										<li><a href="#">По алфавиту А-Я</a></li>
+										<li><a href="#">По алфавиту Я-А</a></li>
+									</ul>
+								</li>
+								<li>Вид</li>
+								<li class="link-to-sort-menu"><span><img src="logos&links/sort.png" alt=""></span> <a href="#">  Галереей</a> <span class="mark"><img src="logos&links/marker-opened.png" alt=""></span>
+									<ul class="sort-menu-2">
+										<li><a href="#">пункт</a></li>
+										<li><a href="#">пункт</a></li>
+										<li><a href="#">пункт</a></li>
+										<li><a href="#">пункт</a></li>
+										<li><a href="#">пункт</a></li>
+									</ul>
+								</li>
+								<li>Товаров на странице</li>
+								<li class="link-to-sort-menu"><a href="#">48</a> <span class="mark"><img src="logos&links/marker-opened.png" alt=""></span>
+									<ul class="sort-menu-3">
+										<li><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">5</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						
+						
+						<div class="row">
+							<div class="lay">
+								<a href="img/sqissors.png" data-lightbox="sqissors">
+									<img src="img/sqissors.png" alt="">
+								</a>
+							</div>
+							<div class="lay">
+								<a href="img/skull.png" data-lightbox="skull">
+									<img src="img/skull.png" alt="">
+								</a>
+							</div>
+							<div class="lay">
+								<a href="img/cup.png" data-lightbox="cup">
+									<img src="img/cup.png" alt="">
+								</a>
+							</div>
+						</div>
+						
+						
+						<div class="row">
+							<div class="toLay">
+								<p><a href="#">Ножницы для пиццы <span class="quantity">(5)</span></a></p>
+							</div>
+							<div class="toLay">
+								<p><a href="#">Форма для вареного яйца "Череп" <span class="quantity">(29)</span></a></p>
+							</div>
+							<div class="toLay">
+								<p><a href="#">Ситечко для чая "Мистер Заваркин" <span class="quantity">(12)</span></a></p>
+							</div>
+						</div>
+						
+						
+						<div class="row">
+							<div class="package in-stock">
+								<div class="picture-box">
+									<img src="img/some-picture.png" alt="">
+									<div class="crown"><img src="logos&links/crown.png" alt=""></div>
+								</div>
+								<div class="text-box">
+									<p><a href="#">Круг отрезной по металлу NOVO Abrasive 115*1.2*22</a></p>
+									<p class="price">4,87 грн</p>
+									<p class="presense">В наличии</p>
+								</div>
+							</div>
+							<div class="package to-order ">
+								<div class="picture-box">
+									<img src="img/some-picture.png" alt="">
+									<div class="crown"><img src="logos&links/crown.png" alt=""></div>
+								</div>
+								<div class="text-box">
+									<p><a href="#">Круг отрезной по металлу NOVO Abrasive 115*1.2*22</a></p>
+									<p class="price">4,87 грн</p>
+									<p class="presense">Под заказ</p>
+								</div>
+							</div>
+							<div class="package">
+								<div class="picture-box">
+									<img src="img/some-picture.png" alt="">
+									<div class="crown" style="display: none;"><img src="logos&links/crown.png" alt=""></div>
+								</div>
+								<div class="text-box">
+									<p><a href="#">Круг отрезной по металлу NOVO Abrasive 115*1.2*22</a></p>
+									<p class="price">4,87 грн</p>
+									<p></p>
+									<p class="hit">Хиты продаж</p>
+								</div>
+							</div>
+							<div class="package to-order">
+								<div class="picture-box">
+									<img src="img/some-picture.png" alt="">
+									<div class="crown"><img src="logos&links/crown.png" alt=""></div>
+								</div>
+								<div class="text-box">
+									<p><a href="#">Круг отрезной по металлу NOVO Abrasive 115*1.2*22</a></p>
+									<p class="price">4,87 грн</p>
+									<p class="presense">Под заказ</p>
+									<p class="hit">Хиты продаж</p>
+								</div>
+							</div>
+							<div class="package out-of-stock">
+								<div class="picture-box">
+									<img src="img/some-picture.png" alt="">
+									<div class="crown"><img src="logos&links/crown.png" alt=""></div>
+								</div>
+								<div class="text-box">
+									<p><a href="#">Круг отрезной по металлу NOVO Abrasive 115*1.2*22</a></p>
+									<p class="price">4,87 грн</p>
+									<p class="presense">Нет в наличии</p>
+								</div>
+							</div>
+						</div>
+						
+						
+						<h1>Витрина</h1>
+						<div class="row">
+							<div class="show-case in-stock">
+								<div class="picture-case">
+									<img src="img/druft.png" alt="">
+								</div>
+								<div class="text-case">
+									<p><a href="#">Покрывало ARYA Evelina Elenora 270x260 см. 1050</a></p>
+									<p class="price">810 грн</p>
+									<p class="presense">В наличии</p>
+								</div>
+							</div>
+							<div class="show-case to-order">
+								<div class="picture-case">
+									<img src="img/druft.png" alt="">
+								</div>
+								<div class="text-case">
+									<p><a href="#">Покрывало ARYA Evelina</a></p>
+									<p class="price">810 грн</p>
+									<p class="presense">Под заказ</p>
+								</div>
+							</div>
+							<div class="show-case">
+								<div class="picture-case">
+									<img src="img/druft.png" alt="">
+								</div>
+								<div class="text-case">
+									<p><a href="#">Покрывало ARYA Evelina Elenora Sumbul 270x260 см. 1050471</a></p>
+									<p class="price">810 грн</p>
+									<p class="presense">Цену уточняйте</p>
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="row">
+							<div class="show-case2 in-stock">
+								<div class="picture-show-case2">
+									<img src="img/druft-2.png" alt="">
+								</div>
+								<div class="text-show-case2">
+									<p><a href="#">Покрывало ARYA Elenora 270x260 см.</a></p>
+									<p class="price">810 грн</p>
+									<p class="presense">Под заказ</p>
+								</div>
+							</div>
+							<div class="show-case2 to-order">
+								<div class="picture-show-case2">
+									<img src="img/druft-2.png" alt="">
+								</div>
+								<div class="text-show-case2">
+									<p><a href="#">Покрывало ARYA Elenora 270x260 см.</a></p>
+									<p class="price">810 грн</p>
+									<p class="presense">Под заказ</p>
+								</div>
+							</div>
+							<div class="show-case2 in-stock">
+								<div class="picture-show-case2">
+									<img src="img/druft-2.png" alt="">
+								</div>
+								<div class="text-show-case2">
+									<p><a href="#">Покрывало ARYA Elenora 270x260 см.</a></p>
+									<p class="price">810 грн</p>
+									<p class="presense">Под заказ</p>
+								</div>
+							</div>
+							<div class="show-case2">
+								<div class="picture-show-case2">
+									<img src="img/druft-2.png" alt="">
+								</div>
+								<div class="text-show-case2">
+									<p><a href="#">Покрывало ARYA Elenora 270x260 см.</a></p>
+									<p class="price">810 грн</p>
+									<p class="presense">Цену уточняйте</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="footer">
+		<p><span><i class="fa fa-copyright"></i></span> 2015 Интернет-магазин женского белья и аксесуаров "ECLIPSE LINGERIE"</p>
+		<p><a class="dash" href="#">Сайт создан на платформе Zakupka.com</a> <a href="#">Пожаловаться на содержимое</a></p>
+		
+		<span class="border-style"></span>
+	</section>
+
+
+<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+	<script src="js/bootstrap.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script>
+		lightbox.option({
+			'resizeDuration': 200,
+			'wrapAround': true
+		})
+	</script>
+</body>
+
+</html>
